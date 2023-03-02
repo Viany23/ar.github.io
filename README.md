@@ -5,7 +5,8 @@
 
 ## Try now!
 
-[Open this sample](https://fcor.github.io/arjs-gestures/image-tracking.html) on your phone and [scan this picture](https://raw.githubusercontent.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex-image-big.jpeg)
+[Open this sample](https://viany23.github.io/ar.github.io/index.html) on your phone and [scan this picture](https://github.com/Viany23/ar.github.io/blob/main/pattern-personaje.patt)
+
 
 
 ```
