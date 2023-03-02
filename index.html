@@ -24,8 +24,13 @@
     >
       <a-assets>
         <a-asset-item
-          id="bowser"
+          id="zorro"
           src="zorrorojo.glb"
+        >
+        </a-asset-item>
+        <a-asset-item
+          id="personaje1"
+          src="personaje1.glb"
         >
         </a-asset-item>
       </a-assets>
@@ -39,7 +44,24 @@
       >
         <a-entity
           id="bowser-model"
-          gltf-model="#bowser"
+          gltf-model="#zorro"
+          position="0 0 0"
+          scale="0.05 0.05 0.05"
+          class="clickable"
+          gesture-handler
+        >
+        </a-entity>
+      </a-marker>
+      <a-marker
+        preset="mark2"
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="markerB"
+      >
+        <a-entity
+          id="bowser-model"
+          gltf-model="#personaje1"
           position="0 0 0"
           scale="0.05 0.05 0.05"
           class="clickable"
