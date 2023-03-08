@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>PERSONAJES EN REALIDAD AUMENTADA</title>
+    <title>PERSONAJES</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles.css">
@@ -20,28 +20,19 @@
       renderer="logarithmicDepthBuffer: true;"
       vr-mode-ui="enabled: false"
       gesture-detector
-      id="scene"
-    >
+      id="scene">
       <a-assets>
         <a-asset-item
-          id="personaje4"
-          src="zorrorojo.glb"
-        >
+          id="zorro"
+          src="zorrorojo.glb">
         </a-asset-item>
-        <a-asset-item
-          id="personaje1"
-          src="computador.glb"
-        >
+		<a-asset-item
+          id="monita"
+          src="barbie.glb">
         </a-asset-item>
-        <a-asset-item
-          id="personaje2"
-          src="alondiga.glb"
-        >
-        </a-asset-item>
-        <a-asset-item
-          id="personaje3"
-          src="personaje1.glb"
-        >
+		<a-asset-item
+          id="mona"
+          src="personaje1.glb">
         </a-asset-item>
       </a-assets>
 
@@ -54,68 +45,44 @@
       >
         <a-entity
           id="zorro-model"
-          gltf-model="#personaje4"
+          gltf-model="#zorro"
           position="0 0 0"
           scale="1 1 1"
           class="clickable"
-          gesture-handler
-        >
+          gesture-handler>
         </a-entity>
       </a-marker>
-      <a-marker
-        type='pattern' url='pattern-personaje.patt'
+	  <a-marker
+        type="pattern" url="pattern-personaje.patt"
         raycaster="objects: .clickable"
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
-        id="markerB"
-      >
+        id="markerB">
         <a-entity
           id="monita-model"
-          gltf-model="#personaje1"
+          gltf-model="#monita"
           position="0 0 0"
           scale="1 1 1"
           class="clickable"
-          gesture-handler
-        >
+          gesture-handler>
         </a-entity>
       </a-marker>
-      
-        <a-marker
-        type='pattern' url='marcadora.patt'
+	  
+	  <a-marker
+        type="pattern" url="marcadora.patt"
         raycaster="objects: .clickable"
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
-        id="markerC"
-      >
+        id="markerB">
         <a-entity
-          id="barbie-model"
-          gltf-model="#personaje2"
+          id="monita-model"
+          gltf-model="#mona"
           position="0 0 0"
           scale="1 1 1"
           class="clickable"
-          gesture-handler
-        >
+          gesture-handler>
         </a-entity>
       </a-marker>
-      
-    <a-marker
-        type='pattern' url='pattern-marcador2.patt'
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        id="markerD"
-      >
-        <a-entity
-          id="hada-model"
-          gltf-model="#personaje3"
-          position="0 0 0"
-          scale="1 1 1"
-          class="clickable"
-          gesture-handler
-        >
-        </a-entity>
-      </a-marker>
-      
       <a-entity camera></a-entity>
     </a-scene>
   </body>
